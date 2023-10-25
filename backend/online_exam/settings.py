@@ -111,7 +111,8 @@ CORS_ALLOWED_ORIGINS = [
                         getenv("ALLOWED_HH"),
                         "https://frontend-eep-oe.vercel.app",
                         "http://localhost:3000",
-                        "http://localhost:3001"]
+                        "http://localhost:3001",
+                        "http://mesfindj.pythonanywhere.com"]
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = [
@@ -119,14 +120,16 @@ CORS_ORIGIN_WHITELIST = [
                          getenv("ALLOWED_HH"),
                          "https://frontend-eep-oe.vercel.app",
                          "http://localhost:3000",
-                         "http://localhost:3001"]
+                         "http://localhost:3001",
+                         "http://mesfindj.pythonanywhere.com"]
 
 CSRF_TRUSTED_ORIGINS = [
                         getenv("ALLOWED_H"),
                         getenv("ALLOWED_HH"),
                         "https://frontend-eep-oe.vercel.app",
                         "http://localhost:3000",
-                        "http://localhost:3001"]
+                        "http://localhost:3001",
+                        "http://mesfindj.pythonanywhere.com"]
 CSRF_COOKIE_HTTPONLY = False
 CSRF_COOKIE_SAMESITE = "Lax"
 SESSION_COOKIE_SAMESITE = "Lax"
