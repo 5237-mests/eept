@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{font-family: 'Quicksand', sans-serif;}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.App {
+  text-align: center;
+}
+img{
+  max-width: 100%;
+}
+.login{
+  display: flex;
+  justify-content: center;
+  color: rgb(48, 42, 165);
+  background-color: rgb(0, 238, 255);
+  height: 50vh;
+}
+.home {
+  background-image: url("./assets/images/abay.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height:80vh;
+}
+.mynav{
+  color: white;
+}
+.view-result{
+  min-height: 60vh;
+}
+
+.bcg{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height:80vh;
+}

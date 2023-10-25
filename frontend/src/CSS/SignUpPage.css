@@ -1,0 +1,16 @@
+.reg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right,
+  rgba(6, 4, 27, 0.7), rgba(209, 228, 207, 0.3));
+}
+
+.forme{
+  background-color: rgb(47, 114, 238);
+  padding: 50px;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 17px;
+  box-shadow: inset -2px -3px 2px  2px rgb(21, 10, 5) ;
+}

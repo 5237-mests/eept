@@ -1,0 +1,17 @@
+.log{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right,
+  rgba(238, 243, 235, 0.5), rgba(0, 15, 19, 0.867));
+}
+
+.formlog{
+  background-color: rgb(7, 16, 4);
+  padding: 50px;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 17px;
+  box-shadow: inset -1px -1px 2px  2px rgb(21, 10, 5) ;
+}
+
