@@ -1,0 +1,2 @@
+# eept
+django + react app
