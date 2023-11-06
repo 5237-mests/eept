@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users',
     'questions',
+    'vacancy',
     'rest_framework',
     'corsheaders',
 ]
@@ -42,7 +43,7 @@ ROOT_URLCONF = 'online_exam.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'build')],
+        'DIRS': [os.path.join(BASE_DIR, 'build')], 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -91,11 +92,10 @@ TIME_ZONE = 'Africa/Addis_Ababa'
 USE_I18N = True
 
 USE_TZ = True
-STATIC_URL = '/static/'
+
 STATICFILES_DIRS = [
-  os.path.join(BASE_DIR, 'build/static')
+    os.path.join(BASE_DIR, 'build/static')
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
@@ -103,33 +103,33 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ],
     "DEFAULT_PERMISSION_CLASSES": [
-                                "rest_framework.permissions.AllowAny"
+        "rest_framework.permissions.AllowAny"
     ]
 }
 CORS_ALLOWED_ORIGINS = [
-                        getenv("ALLOWED_H"),
-                        getenv("ALLOWED_HH"),
-                        "https://frontend-eep-oe.vercel.app",
-                        "http://localhost:3000",
-                        "http://localhost:3001",
-                        "http://mesfindj.pythonanywhere.com"]
+    getenv("ALLOWED_H"),
+    getenv("ALLOWED_HH"),
+    "https://frontend-eep-oe.vercel.app",
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://mesfindj.pythonanywhere.com"]
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = [
-                         getenv("ALLOWED_H"),
-                         getenv("ALLOWED_HH"),
-                         "https://frontend-eep-oe.vercel.app",
-                         "http://localhost:3000",
-                         "http://localhost:3001",
-                         "http://mesfindj.pythonanywhere.com"]
+    getenv("ALLOWED_H"),
+    getenv("ALLOWED_HH"),
+    "https://frontend-eep-oe.vercel.app",
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://mesfindj.pythonanywhere.com"]
 
 CSRF_TRUSTED_ORIGINS = [
-                        getenv("ALLOWED_H"),
-                        getenv("ALLOWED_HH"),
-                        "https://frontend-eep-oe.vercel.app",
-                        "http://localhost:3000",
-                        "http://localhost:3001",
-                        "http://mesfindj.pythonanywhere.com"]
+    getenv("ALLOWED_H"),
+    getenv("ALLOWED_HH"),
+    "https://frontend-eep-oe.vercel.app",
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://mesfindj.pythonanywhere.com"]
 CSRF_COOKIE_HTTPONLY = False
 CSRF_COOKIE_SAMESITE = "Lax"
 SESSION_COOKIE_SAMESITE = "Lax"
@@ -151,3 +151,10 @@ EMAIL_PORT = getenv('EMAIL_PORT')
 EMAIL_HOST_USER = getenv("MAIL_USER")
 EMAIL_HOST_PASSWORD = getenv("MAIL_PASSWORD")
 EMAIL_USE_TLS = True
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = 'static/'
